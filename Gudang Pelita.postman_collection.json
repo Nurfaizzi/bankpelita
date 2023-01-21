@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "18409c11-79cb-4870-b045-f821778d3aa7",
+		"name": "Gudang Pelita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4071367"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4111/selling",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"nama_nasabah\": \"alisa\",\n            \"tipe_barang\":\"botol\",\n            \"jumlah\": \"1\",\n            \"alamat\": \"indogreen\",\n            \"telepon\": \"0822\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://103.161.184.206:4111/selling",
+					"protocol": "http",
+					"host": [
+						"103",
+						"161",
+						"184",
+						"206"
+					],
+					"port": "4111",
+					"path": [
+						"selling"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4111/selling",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://103.161.184.206:4111/selling?nama_nasabah=pite&limit=2&page=6",
+					"protocol": "http",
+					"host": [
+						"103",
+						"161",
+						"184",
+						"206"
+					],
+					"port": "4111",
+					"path": [
+						"selling"
+					],
+					"query": [
+						{
+							"key": "nama_nasabah",
+							"value": "pite"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "page",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4111/selling/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://103.161.184.206:4111/selling/1",
+					"protocol": "http",
+					"host": [
+						"103",
+						"161",
+						"184",
+						"206"
+					],
+					"port": "4111",
+					"path": [
+						"selling",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4111/selling/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"nama_nasabah\": \"alisa12\",\n            \"tipe_barang\":\"botol\",\n            \"jumlah\": \"1\",\n            \"alamat\": \"indogreen\",\n            \"telepon\": \"0822\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://103.161.184.206:4111/selling/1",
+					"protocol": "http",
+					"host": [
+						"103",
+						"161",
+						"184",
+						"206"
+					],
+					"port": "4111",
+					"path": [
+						"selling",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
